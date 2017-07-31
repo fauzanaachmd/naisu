@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+.navbar-default {
+  background: none;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+
+  .navbar-brand {
+    height: auto;
+  }
+
+  .active>a, .active>a:focus, .active>a:hover {
+    background: none;
+  }
+
+  .navbar-nav>li {
+    padding: 18px 15px;
+    a {
+      padding: 0;
+    }
+
+  }
+}
+
+
+/* HOME PAGE CSS */
+.home-hero-parallax {
+  height: 100vh;
+  width: 100%;
+  background: #f9f8f6;
+  margin-top: -57px;
+  padding-top: 57px;
+}

@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
+  "name": "naisu",
+  "description": "An AngularJS Company Profile Web",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://gitlab.com/fauzan-blitz/naisu.git",
   "license": "MIT",
   "private": true,
   "dependencies": {
