@@ -7,12 +7,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Naisu Web</title>
+  <link rel="icon" href="assets/img/footer-logo.png">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </head>
 <body>
 <div class="container">
@@ -48,17 +52,59 @@
 
   <div ng-view></div>
 
+<footer>
+  <div class="container">
+    <div class="clearfix">
+      <div class="col-sm-6">
+        <p>PT. Madri Natta Aksara</p>
+        <table class="footer-address-table">
+          <tr>
+            <td>E</td>
+            <td>:</td>
+            <td>hello@naisustudio.com</td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>:</td>
+            <td>Jl. Kemang Raya No.15, Jakarta Selatan, 12720</td>
+          </tr>
+          <tr>
+            <td>T</td>
+            <td>:</td>
+            <td>+62 (21) 717 922 70</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <hr class="footer-hr">
+    <div class="sub-footer clearfix">
+      <div class="col-sm-4">
+        <ul class="socmed">
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <p class="copyright">&copy; Copyright 2017 naisustudio.com</p>
+      </div>
+      <div class="col-sm-4 footer-logo">
+        <img src="assets/img/footer-logo.png">
+      </div>
+    </div>
+  </div>
+</footer>
+
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
 
-<script src="bower_components/jQuery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <!--<script src="bower_components/parallax-js/js/kinetics.js"></script>-->
-  <script src="assets/js/main.js"></script>
   <!--<script src="bower_components/jparallax/js/jquery.parallax.min.js"></script>-->
   <script src="app.js"></script>
   <script src="home/home.js"></script>

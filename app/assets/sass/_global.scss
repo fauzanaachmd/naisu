@@ -2,6 +2,7 @@
   font-size: 18px;
   font-family: 'Montserrat';
   color: #797979;
+  background: #f9f8f6;
 
   &.btn-o {
     border: 3px solid #797979;
@@ -16,4 +17,22 @@
   color: #333;
   text-decoration: none;
   outline: none;
+}
+.socmed {
+  padding: 0;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: #222222;
+      border-radius: 15px;
+      color: #f9f8f6;
+      text-align: center;
+      padding-top: 5px;
+    }
+  }
 }
