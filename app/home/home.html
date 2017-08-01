@@ -15,5 +15,18 @@
     </div>
 </div>
 <section id="home-portfolio">
-
+    <div class="container">
+        <div class="btn-group" opt-kind="" ok-key="filter">
+            <button type="button" class="btn btn-default active" ok-sel="*">All</button>
+            <button type="button" class="btn btn-default" ok-sel=".artwork">Artwork</button>
+            <button type="button" class="btn btn-default" ok-sel=".branding">Branding</button>
+            <button type="button" class="btn btn-default" ok-sel=".illustration">Illustration</button>
+            <button type="button" class="btn btn-default" ok-sel=".typography">Typography</button>
+        </div>
+        <ul isotope-container="isotope-container" class="isotope">
+            <li ng-repeat="x in xList" isotope-item="" class="{{x.class}} col-sm-4">
+                <img class="portfolio-thum" src="{{x.img}}" bc-imagesloaded>
+            </li>
+        </ul>
+    </div>
 </section>

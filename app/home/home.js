@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('home', ['ngRoute'])
+angular.module('home', ['ngRoute', 'iso.directives'])
 
 .config(['$routeProvider', function($routeProvider) {
 
@@ -28,5 +28,14 @@ angular.module('home', ['ngRoute'])
         parallax(e, layer5, 50);
         parallax(e, layer6, 60);
     });
+
+    $scope.xList = [
+            {'name':'modivation','class':'branding', 'class-name': 'branding','img':'assets/img/portfolio/modivation/thumbnail.png'},
+            {'name':'keen','class':'branding', 'class-name': 'branding','img':'assets/img/portfolio/keen/thumbnail.png'},
+            {'name':'snctry & co','class':'print-design', 'class-name': 'print design','img':'assets/img/portfolio/snctry&co/thumbnail.png'},
+            {'name':'amavi','class':'branding', 'class-name': 'branding','img':'assets/img/portfolio/amavi/thumbnail.png'},
+            {'name':'adil mochtar','class':'branding', 'class-name': 'branding','img':'assets/img/portfolio/adil-mochtar/thumbnail.png'},
+            {'name':'anp-insight','class':'branding', 'class-name': 'branding','img':'assets/img/portfolio/anp-insight/thumbnail.png'}
+        ]
 
 });

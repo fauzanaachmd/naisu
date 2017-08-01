@@ -166,4 +166,12 @@ footer .footer-address-table tr td:first-child {
   padding-right: 20px;
 }
 
+.isotope {
+  padding: 0;
+  list-style: none;
+}
+.isotope li {
+  list-style: none;
+}
+
 /*# sourceMappingURL=style.css.map */

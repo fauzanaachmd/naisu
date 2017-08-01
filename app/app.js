@@ -8,10 +8,14 @@ angular.module('myApp', [
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   // $routeProvider.otherwise({redirectTo: '/home'});
 
-    $routeProvider.when('/', {
-        templateUrl: 'home/home.html',
-        controller: 'HomeCtrl'
-    })
+    $routeProvider
+        .when('/', {
+            templateUrl: 'home/home.html',
+            controller: 'HomeCtrl'
+        })
+        .otherwise({
+            redirectTo: '/'
+        })
 }])
     .controller('GlobalController', function GlobalController($scope, $location) {
         $scope.isActive = function(uri) {
