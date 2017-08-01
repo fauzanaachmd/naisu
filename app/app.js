@@ -12,4 +12,9 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
         templateUrl: 'home/home.html',
         controller: 'HomeCtrl'
     })
-}]);
+}])
+    .controller('GlobalController', function GlobalController($scope, $location) {
+        $scope.isActive = function(uri) {
+            return uri === $location.path();
+        }
+    });

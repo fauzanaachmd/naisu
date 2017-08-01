@@ -2,6 +2,9 @@ module.exports = function(grunt) {
     grunt.initConfig({
         sass: {
             dev: {
+                options: {
+                    style: 'expanded'
+                },
                 files: {
                     'app/assets/css/style.css': 'app/assets/sass/style.scss'
                 }

@@ -1,3 +1,6 @@
+@import 'fontface';
+@import 'global';
+
 * {
   margin: 0;
 }
@@ -6,19 +9,28 @@
   border: none;
   border-radius: 0;
   margin-bottom: 0;
+  z-index: 26;
+
+  .navbar-header {
+    margin-right: 70px;
+  }
 
   .navbar-brand {
     height: auto;
   }
 
   .active>a, .active>a:focus, .active>a:hover {
-    background: none;
+    background: none !important;
   }
 
   .navbar-nav>li {
-    padding: 18px 15px;
+    padding: 18px 20px;
     a {
       padding: 0;
+      font-family: 'Montserrat';
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #797979 !important;
     }
 
   }
@@ -32,4 +44,62 @@
   background: #f9f8f6;
   margin-top: -57px;
   padding-top: 57px;
+  position: relative;
+
+  .layer1 {
+    z-index: 1;
+  }
+  .layer2 {
+    z-index: 2;
+  }
+}
+
+.welcome-text {
+  position: absolute;
+  top:50%;
+  transform: translate(0,-50%);
+
+  h1 {
+    line-height: 75px;
+    font-size: 60px;
+    font-family: 'Montserrat';
+    color: #646260;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+}
+
+
+.masthead-banner {
+  width: 100%;
+  height: 453px;
+  padding: 0;
+  position: relative;
+
+  .parallax {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  img {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  img.layer-blue-baloon {
+    top: 60px;
+    left: 100px;
+  }
+  img.layer-red-balloon {
+    left: 149px;
+    top: -55px;
+  }
+  img.layer-slogan {
+    top: 56px;
+    left: -24px;
+  }
 }
