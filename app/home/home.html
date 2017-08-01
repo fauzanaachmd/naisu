@@ -16,16 +16,18 @@
 </div>
 <section id="home-portfolio">
     <div class="container">
-        <div class="btn-group" opt-kind="" ok-key="filter">
-            <button type="button" class="btn btn-default active" ok-sel="*">All</button>
-            <button type="button" class="btn btn-default" ok-sel=".artwork">Artwork</button>
-            <button type="button" class="btn btn-default" ok-sel=".branding">Branding</button>
-            <button type="button" class="btn btn-default" ok-sel=".illustration">Illustration</button>
-            <button type="button" class="btn btn-default" ok-sel=".typography">Typography</button>
+        <div class="btn-group portfolio-btn" opt-kind="" ok-key="filter">
+            <button type="button" class="btn active" ok-sel="*">All</button>
+            <button type="button" class="btn" ok-sel=".artwork">Artwork</button>
+            <button type="button" class="btn" ok-sel=".branding">Branding</button>
+            <button type="button" class="btn" ok-sel=".illustration">Illustration</button>
+            <button type="button" class="btn" ok-sel=".typography">Typography</button>
         </div>
         <ul isotope-container="isotope-container" class="isotope">
-            <li ng-repeat="x in xList" isotope-item="" class="{{x.class}} col-sm-4">
-                <img class="portfolio-thum" src="{{x.img}}" bc-imagesloaded>
+            <li ng-repeat="x in xList" isotope-item="" class="{{x.class}} col-sm-4" images-loaded-events="ctrl.imgLoadedEvents">
+                <img class="portfolio-thum" src="{{x.img}}" width="100%">
+                <h3 class="portfolio-name">{{x.name}}</h3>
+                <h5 class="portfolio-class">{{x.classname}}</h5>
             </li>
         </ul>
     </div>
