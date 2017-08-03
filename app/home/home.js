@@ -1,6 +1,5 @@
-'use strict';
 
-angular.module('home', ['ngRoute', 'iso.directives', 'hj.imagesLoaded'])
+angular.module('home', ['ngRoute', 'iso.directives'])
 
 .config(['$routeProvider', function($routeProvider) {
 
@@ -29,28 +28,6 @@ angular.module('home', ['ngRoute', 'iso.directives', 'hj.imagesLoaded'])
         parallax(e, layer6, 60);
     });
 
-    var ctrl = this;
-
-    $scope.$on('imagesLoaded:loaded', function(event, element){
-        console.log('loaded', element);
-    });
-
-    ctrl.imgLoadedEvents = {
-
-        always: function(instance) {
-            // Do stuff
-        },
-
-        done: function(instance) {
-            angular.element(instance.elements[0]).addClass('loaded');
-        },
-
-        fail: function(instance) {
-            // Do stuff
-        }
-
-    };
-
     $scope.xList = [
             {'name':'modivation','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/modivation/thumbnail.png'},
             {'name':'keen','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/keen/thumbnail.png'},
@@ -58,6 +35,11 @@ angular.module('home', ['ngRoute', 'iso.directives', 'hj.imagesLoaded'])
             {'name':'amavi','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/amavi/thumbnail.png'},
             {'name':'adil mochtar','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/adil-mochtar/thumbnail.png'},
             {'name':'anp-insight','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/anp-insight/thumbnail.png'}
-        ]
+        ];
 
+    // $scope.load = function () {
+    //     console.log('Loading');
+    // };
+    //
+    // $scope.load();
 });

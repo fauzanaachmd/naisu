@@ -4,21 +4,19 @@
 angular.module('myApp', [
   'ngRoute',
   'home'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  // $routeProvider.otherwise({redirectTo: '/home'});
-
-    $routeProvider
-        .when('/', {
-            templateUrl: 'home/home.html',
-            controller: 'HomeCtrl'
-        })
-        .otherwise({
-            redirectTo: '/'
-        })
-}])
+])
+    .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+        $routeProvider
+            .when('/', {
+                templateUrl: 'home/home.html',
+                controller: 'HomeCtrl'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
+    }])
     .controller('GlobalController', function GlobalController($scope, $location) {
         $scope.isActive = function(uri) {
             return uri === $location.path();
-        }
+        };
     });

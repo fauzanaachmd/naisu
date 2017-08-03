@@ -24,8 +24,8 @@
             <button type="button" class="btn" ok-sel=".typography">Typography</button>
         </div>
         <ul isotope-container="isotope-container" class="isotope">
-            <li ng-repeat="x in xList" isotope-item="" class="{{x.class}} col-sm-4" images-loaded-events="ctrl.imgLoadedEvents">
-                <img class="portfolio-thum" src="{{x.img}}" width="100%">
+            <li ng-repeat="x in xList" isotope-item="" class="{{x.class}} col-sm-4">
+                <img class="portfolio-thum" ng-src="{{x.img}}" width="100%">
                 <h3 class="portfolio-name">{{x.name}}</h3>
                 <h5 class="portfolio-class">{{x.classname}}</h5>
             </li>
