@@ -6,6 +6,11 @@
   "repository": "https://gitlab.com/fauzan-blitz/naisu.git",
   "license": "MIT",
   "devDependencies": {
+    "@angular/cli": "^1.2.7",
+    "@angular/compiler": "^4.3.3",
+    "@angular/compiler-cli": "^4.3.3",
+    "@angular/core": "^4.3.3",
+    "angular-cli-ghpages": "^0.5.1",
     "bower": "^1.7.7",
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",

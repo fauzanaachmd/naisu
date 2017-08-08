@@ -14,9 +14,15 @@ angular.module('myApp', [
             .otherwise({
                 redirectTo: '/'
             });
+
+        $locationProvider.html5Mode(true);
     }])
     .controller('GlobalController', function GlobalController($scope, $location) {
         $scope.isActive = function(uri) {
             return uri === $location.path();
         };
+
+        $scope.name = "fauzan";
+        $scope.baseUrl = $location.$$absUrl;
+        console.log($location.$$absUrl)
     });
