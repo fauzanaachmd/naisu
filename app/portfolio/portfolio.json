@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "name":"modivation",
+    "class":[
+      "branding"
+    ],
+    "classname": "branding",
+    "year": 2017,
+    "img":"assets/img/portfolio/modivation/thumbnail.png",
+    "gallery": [
+      "assets/img/portfolio/modivation/modivation-01.jpg",
+      "assets/img/portfolio/modivation/modivation-02.jpg",
+      "assets/img/portfolio/modivation/modivation-03.jpg",
+      "assets/img/portfolio/modivation/modivation-04.jpg",
+      "assets/img/portfolio/modivation/modivation-05.jpg",
+      "assets/img/portfolio/modivation/modivation-06.jpg"
+    ],
+    "content" : "-"
+  },
+  {
+    "id": 2,
+    "name":"keen",
+    "class":[
+      "branding",
+      "print"
+    ],
+    "classname": "branding",
+    "year": 2013,
+    "img":"assets/img/portfolio/keen/thumbnail.png",
+    "gallery": [
+      "assets/img/portfolio/keen/keen-01.jpg",
+      "assets/img/portfolio/keen/keen-02.jpg",
+      "assets/img/portfolio/keen/keen-03.jpg"
+    ],
+    "content" : "<p>Keen is a company engaged in the procurement of equipment for outdoor enthusiast such as camping, climbing, mountaineering, caving, traveling, essential equipment and also provide all the equipment for the professional, safety and rescue.</p>"
+  },
+  {
+    "id": 3,
+    "name":"snctry & co",
+    "class":[
+      "brand identity",
+      "print"
+    ],
+    "classname": "branding",
+    "year": 2017,
+    "img":"assets/img/portfolio/snctry&co/thumbnail.png",
+    "gallery": [
+      "assets/img/portfolio/snctry&co/SNCTRY01.jpg",
+      "assets/img/portfolio/snctry&co/SNCTRY02.jpg"
+    ],
+    "content" : "<p>Snctry&Co. is a collaboration project by Snctry and But First Coffee. Opening their new branch at Bursa Efek Indonesia SCBD, Snctry&Co. offers salads, wraps, smoothie bowls, and coffee for breakfast, lunch, dinner or even a little afternoon coffee break.</p>"
+  },
+  {
+    "id": 4,
+    "name":"amavi",
+    "class":[
+      "brand identity"
+    ],
+    "classname": "branding",
+    "year": 2017,
+    "img":"assets/img/portfolio/amavi/thumbnail.png",
+    "gallery": [
+      "assets/img/portfolio/amavi/Amavi01.jpg",
+      "assets/img/portfolio/amavi/Amavi02.jpg",
+      "assets/img/portfolio/amavi/Amavi03.jpg",
+      "assets/img/portfolio/amavi/Amavi04.jpg"
+    ],
+    "content" : "<p>A branding for culinary brand with authentique middle eastern dish</p>"
+  },
+  {
+    "id": 5,
+    "name":"adil mochtar",
+    "class":[
+      "brand identity"
+    ],
+    "classname": "branding",
+    "year": 2017,
+    "img":"assets/img/portfolio/adil-mochtar/thumbnail.png",
+    "gallery": [
+      "assets/img/portfolio/adil-mochtar/adilmochtar-01.jpg",
+      "assets/img/portfolio/adil-mochtar/adilmochtar-02.jpg",
+      "assets/img/portfolio/adil-mochtar/adilmochtar-03.jpg"
+    ],
+    "content" : "-"
+  },
+  {
+    "id": 6,
+    "name":"anp-insight",
+    "class":[
+      "brand identity",
+      "print"
+    ],
+    "classname": "branding",
+    "year": 2017,
+    "img":"assets/img/portfolio/anp-insight/thumbnail.png",
+    "gallery": [
+      "assets/img/portfolio/anp-insight/ANP00.jpg",
+      "assets/img/portfolio/anp-insight/ANP02.jpg",
+      "assets/img/portfolio/anp-insight/ANP03.jpg"
+    ],
+    "content" : "<p>ANP-Insight is a corporate that deliver strategic solutions for decision-making and valuable insights to the 21st century complex business environment challenges primarily on economic, social-cultural, political, and security related issues with innovative and creative approaches. Providing business strategy, analysis, and information for comprehensive decision-making reference to secure sustainability of current business operation or future investment.</p>"
+  }
+]

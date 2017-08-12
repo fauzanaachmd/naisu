@@ -29,12 +29,12 @@ angular.module('home', ['ngRoute', 'iso.directives'])
     });
 
     $scope.xList = [
-            {'name':'modivation','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/modivation/thumbnail.png'},
-            {'name':'keen','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/keen/thumbnail.png'},
-            {'name':'snctry & co','class':'print-design', 'classname': 'print design','img':'assets/img/portfolio/snctry&co/thumbnail.png'},
-            {'name':'amavi','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/amavi/thumbnail.png'},
-            {'name':'adil mochtar','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/adil-mochtar/thumbnail.png'},
-            {'name':'anp-insight','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/anp-insight/thumbnail.png'}
+            {'id':1,'name':'modivation','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/modivation/thumbnail.png'},
+            {'id':2,'name':'keen','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/keen/thumbnail.png'},
+            {'id':3,'name':'snctry & co','class':'print-design', 'classname': 'print design','img':'assets/img/portfolio/snctry&co/thumbnail.png'},
+            {'id':4,'name':'amavi','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/amavi/thumbnail.png'},
+            {'id':5,'name':'adil mochtar','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/adil-mochtar/thumbnail.png'},
+            {'id':6,'name':'anp-insight','class':'branding', 'classname': 'branding','img':'assets/img/portfolio/anp-insight/thumbnail.png'}
         ];
 
     // $scope.load = function () {

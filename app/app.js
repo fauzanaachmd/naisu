@@ -3,13 +3,22 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
-  'home'
+  'home',
+    'portfolio'
 ])
     .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'home/home.html',
+                templateUrl: '/home/home.html',
                 controller: 'HomeCtrl'
+            })
+            .when('/about', {
+                templateUrl: '/about/about.html',
+                controller: 'AboutCtrl'
+            })
+            .when('/portfolio/:id', {
+                templateUrl: '/portfolio/portfolio.html',
+                controller: 'PortfolioCtrl'
             })
             .otherwise({
                 redirectTo: '/'
@@ -23,6 +32,8 @@ angular.module('myApp', [
         };
 
         $scope.name = "fauzan";
-        $scope.baseUrl = $location.$$absUrl;
+        $scope.baseUrl = function(file = '') {
+            return $location.$$absUrl + file;
+        };
         console.log($location.$$absUrl)
     });
