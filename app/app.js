@@ -9,22 +9,22 @@ angular.module('myApp', [
     .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: '/home/home.html',
+                templateUrl: 'home/home.html',
                 controller: 'HomeCtrl'
             })
-            .when('/about', {
-                templateUrl: '/about/about.html',
+            .when('/about/', {
+                templateUrl: 'about/about.html',
                 controller: 'AboutCtrl'
             })
             .when('/portfolio/:id', {
-                templateUrl: '/portfolio/portfolio.html',
+                templateUrl: 'portfolio/portfolio.html',
                 controller: 'PortfolioCtrl'
             })
             .otherwise({
                 redirectTo: '/'
             });
 
-        $locationProvider.html5Mode(true);
+        // $locationProvider.html5Mode(true);
     }])
     .controller('GlobalController', function GlobalController($scope, $location) {
         $scope.isActive = function(uri) {
