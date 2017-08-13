@@ -207,7 +207,7 @@ footer {
 .portfolio-container {
   margin-top: 100px;
 }
-.portfolio-name {
+.page-title {
   font-size: 30px;
   font-family: 'Montserrat';
   text-transform: uppercase;
@@ -239,6 +239,12 @@ footer {
   }
 }
 /* END OF PORTFOLIO PAGE CSS */
+
+/* ABOUT PAGE CSS */
+.about-container {
+  margin-top: 100px;
+}
+/* END OF ABOUT PAGE CSS */
 
 .col768-6 {
   @media (max-width: 768px) {

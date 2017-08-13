@@ -4,7 +4,8 @@
 angular.module('myApp', [
   'ngRoute',
   'home',
-    'portfolio'
+    'portfolio',
+    'about'
 ])
     .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
         $routeProvider

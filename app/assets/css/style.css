@@ -250,7 +250,7 @@ footer .footer-address-table tr td:first-child {
   margin-top: 100px;
 }
 
-.portfolio-name {
+.page-title {
   font-size: 30px;
   font-family: 'Montserrat';
   text-transform: uppercase;
@@ -280,6 +280,12 @@ footer .footer-address-table tr td:first-child {
 }
 
 /* END OF PORTFOLIO PAGE CSS */
+/* ABOUT PAGE CSS */
+.about-container {
+  margin-top: 100px;
+}
+
+/* END OF ABOUT PAGE CSS */
 @media (max-width: 768px) {
   .col768-6 {
     width: 50%;
