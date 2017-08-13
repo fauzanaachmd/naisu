@@ -20,6 +20,9 @@
 }
 .socmed {
   padding: 0;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 
   li {
     display: inline-block;

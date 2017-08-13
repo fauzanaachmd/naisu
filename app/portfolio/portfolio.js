@@ -4,7 +4,7 @@ angular.module('portfolio', ['ngRoute'])
 
     }])
 
-    .controller('PortfolioCtrl', function PortfolioCtrl($scope, $routeParams, $http) {
+    .controller('PortfolioCtrl', function PortfolioCtrl($scope, $routeParams, $http, $sce) {
         'use strict';
         var portfolioData = null;
 
@@ -12,8 +12,9 @@ angular.module('portfolio', ['ngRoute'])
             .then(function onSuccess(response) {
                 portfolioData = response.data;
                 $scope.detailData = portfolioData.filter(findPortfolio)[0];
+                $scope.contentHTML = $sce.trustAsHtml($scope.detailData.content);
 
-                // console.log($scope.detailData);
+                console.log($scope.detailData);
 
                 function findPortfolio(data) {
                     // var targetData = null;

@@ -1,3 +1,18 @@
-<div class="container" ng-controller="PortfolioCtrl">
-    <h3>{{detailData.name}}</h3>
+<div class="container portfolio-container" ng-controller="PortfolioCtrl">
+    <h3 class="portfolio-name">{{detailData.name}}</h3>
+    <div class="portfolio-detail">
+        <div class="clearfix">
+            <span class="class-name pull-left">
+                <b ng-repeat="class in detailData.class">{{class}} <span>/</span> </b>
+            </span>
+                <span class="class-name pull-right">
+                <b>Year : {{detailData.year}}</b>
+            </span>
+        </div>
+        <div class="portfolio-gallery-container">
+            <img class="portfolio-gallery" ng-repeat="gallery in detailData.gallery" ng-src="{{gallery}}" alt="{{gallery}}">
+        </div>
+        <div class="portfolio-detail-content" ng-bind-html="contentHTML"></div>
+        <hr class="portfolio-hr">
+    </div>
 </div>

@@ -107,6 +107,7 @@ html {
   //transform: translate(0,-50%);
   z-index: 1000;
   margin-top: 20vh;
+  padding: 0 45px;
 
   h1 {
     line-height: 75px;
@@ -117,36 +118,6 @@ html {
     margin-bottom: 50px;
   }
 }
-
-footer {
-  padding: 30px 0;
-  background: #f9f8f6;
-  margin-top: 30px;
-  color: #737373;
-
-  .footer-logo {
-    text-align: right;
-  }
-  .copyright {
-    text-align: center;
-  }
-  .footer-hr {
-    border-top: 1px solid #cecece;
-    margin: 30px 0;
-  }
-  .footer-address-table {
-    margin-top: 20px;
-    tr {
-      td {
-        padding: 0 5px;
-      }
-      td:first-child {
-        padding-right: 20px;
-      }
-    }
-  }
-}
-
 .portfolio-btn {
   display: table;
   margin: 50px auto;
@@ -195,6 +166,79 @@ footer {
     }
   }
 }
+/* END OF HOME PAGE CSS */
+
+/* FOOTER CSS */
+footer {
+  padding: 30px 0;
+  background: #f9f8f6;
+  margin-top: 30px;
+  color: #737373;
+
+  .footer-logo {
+    text-align: right;
+  }
+  .copyright {
+    text-align: center;
+
+    @media (max-width: 768px) {
+      text-align: left;
+    }
+  }
+  .footer-hr {
+    border-top: 1px solid #cecece;
+    margin: 30px 0;
+  }
+  .footer-address-table {
+    margin-top: 20px;
+    tr {
+      td {
+        padding: 0 5px;
+      }
+      td:first-child {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+/* END FOOTER CSS */
+
+/* PORTFOLIO PAGE CSS */
+.portfolio-container {
+  margin-top: 100px;
+}
+.portfolio-name {
+  font-size: 30px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: #646260;
+}
+.portfolio-gallery-container {
+  margin: 15px 0;
+}
+.portfolio-gallery {
+  margin: 20px 0;
+  width: 100%;
+}
+.portfolio-detail-content {
+  margin: 100px 0;
+}
+.portfolio-detail {
+  .class-name {
+    b {
+      font-family: 'Montserrat';
+      text-transform: uppercase;
+      color: #646260;
+
+      &:last-child {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+/* END OF PORTFOLIO PAGE CSS */
 
 .col768-6 {
   @media (max-width: 768px) {
