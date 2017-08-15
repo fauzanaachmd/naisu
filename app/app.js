@@ -25,7 +25,7 @@ angular.module('myApp', [
                 redirectTo: '/'
             });
 
-        // $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(true);
     }])
     .controller('GlobalController', function GlobalController($scope, $location) {
         $scope.isActive = function(uri) {
