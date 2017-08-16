@@ -36,5 +36,8 @@ angular.module('myApp', [
         $scope.baseUrl = function(file = '') {
             return $location.$$absUrl + file;
         };
-        console.log($location.$$absUrl)
+        console.log($location.$$absUrl);
+        $scope.load = function () {
+            window.loading_screen.finish();
+        };
     });

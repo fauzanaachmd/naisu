@@ -1,5 +1,5 @@
 
-angular.module('about', ['ngRoute', 'iso.directives'])
+angular.module('about', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
 
