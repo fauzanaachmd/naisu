@@ -73,6 +73,21 @@ html {
   font-family: 'Montserrat-Regular';
 }
 
+body > .inner {
+  display: none;
+}
+
+body.pg-loaded > .inner {
+  display: block;
+}
+
+.form-control {
+  background: #f9f8f6;
+  border-radius: 0;
+  padding: 14px 16px;
+  height: auto !important;
+}
+
 .navbar-default {
   background: none;
   border: none;
@@ -112,6 +127,12 @@ html {
   right: 0;
   left: 0;
 }
+@media (max-width: 768px) {
+  .nav-header {
+    background: white;
+    z-index: 4;
+  }
+}
 
 .navbar-toggle {
   z-index: 10000000000000000000000;
@@ -135,7 +156,7 @@ html {
 }
 @media (max-width: 768px) {
   .home-hero-parallax {
-    margin-top: 0;
+    margin-top: 50px;
     padding-top: 0;
   }
 }
@@ -178,10 +199,10 @@ html {
 }
 
 .welcome-text {
-  position: relative;
+  position: absolute;
   z-index: 1000;
   margin-top: 20vh;
-  padding: 0 45px;
+  padding: 0 95px;
 }
 .welcome-text h1 {
   line-height: 75px;
@@ -310,6 +331,17 @@ footer .footer-address-table tr td:first-child {
 }
 
 /* END OF ABOUT PAGE CSS */
+/* CONTACT PAGE CSS */
+.btn-contact {
+  background: #646260;
+  border-radius: 0;
+  color: white;
+  font-family: 'Montserrat-Regular';
+  padding: 14px 30px;
+  font-size: 14px;
+}
+
+/* END OF CONTACT PAGE CSS */
 @media (max-width: 768px) {
   .col768-6 {
     width: 50%;

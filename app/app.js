@@ -5,7 +5,8 @@ angular.module('myApp', [
   'ngRoute',
   'home',
     'portfolio',
-    'about'
+    'about',
+    'contact'
 ])
     .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
         $routeProvider
@@ -20,6 +21,10 @@ angular.module('myApp', [
             .when('/portfolio/:id', {
                 templateUrl: 'portfolio/portfolio.html',
                 controller: 'PortfolioCtrl'
+            })
+            .when('/contact', {
+                templateUrl: 'contact/contact.html',
+                controller: 'ContactCtrl'
             })
             .otherwise({
                 redirectTo: '/'
