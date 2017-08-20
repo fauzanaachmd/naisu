@@ -113,6 +113,16 @@ html {
   left: 0;
 }
 
+.navbar-toggle {
+  z-index: 10000000000000000000000;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    background: white;
+  }
+}
+
 /* HOME PAGE CSS */
 .home-hero-parallax {
   height: 100vh;
@@ -121,6 +131,7 @@ html {
   padding-top: 57px;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 @media (max-width: 768px) {
   .home-hero-parallax {
