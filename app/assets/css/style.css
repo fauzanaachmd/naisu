@@ -121,16 +121,17 @@ body.pg-loaded > .inner {
 }
 
 .nav-header {
-  position: absolute;
   top: 0;
   width: 100%;
   right: 0;
   left: 0;
+  position: absolute;
 }
 @media (max-width: 768px) {
   .nav-header {
     background: white;
     z-index: 4;
+    position: relative;
   }
 }
 
@@ -156,7 +157,6 @@ body.pg-loaded > .inner {
 }
 @media (max-width: 768px) {
   .home-hero-parallax {
-    margin-top: 50px;
     padding-top: 0;
   }
 }
@@ -204,6 +204,13 @@ body.pg-loaded > .inner {
   margin-top: 20vh;
   padding: 0 95px;
 }
+@media (max-width: 768px) {
+  .welcome-text {
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-top: 0;
+  }
+}
 .welcome-text h1 {
   line-height: 75px;
   font-size: 60px;
@@ -212,16 +219,24 @@ body.pg-loaded > .inner {
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+@media (max-width: 480px) {
+  .welcome-text h1 {
+    line-height: 55px;
+    font-size: 40px;
+  }
+}
 
 .portfolio-btn {
   display: table;
   margin: 50px auto;
+  text-align: center;
 }
 .portfolio-btn .btn {
   border: none;
   background: none;
   text-transform: uppercase;
   color: #bbbbbb;
+  float: none;
 }
 .portfolio-btn .btn:focus, .portfolio-btn .btn:hover, .portfolio-btn .btn:active, .portfolio-btn .btn.active {
   outline: none;
@@ -350,6 +365,12 @@ footer .footer-address-table tr td:first-child {
 @media (max-width: 380px) {
   .col768-6 {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide768 {
+    display: none;
   }
 }
 

@@ -62,15 +62,16 @@ body.pg-loaded > .inner {
 }
 
 .nav-header {
-  position: absolute;
   top: 0;
   width: 100%;
   right: 0;
   left: 0;
+  position: absolute;
 
   @media(max-width: 768px) {
     background: white;
     z-index: 4;
+    position: relative;
   }
 }
 
@@ -95,7 +96,6 @@ body.pg-loaded > .inner {
   overflow: hidden;
   z-index: 1;
   @media (max-width: 768px) {
-    margin-top: 50px;
     padding-top: 0;
   }
 
@@ -147,6 +147,11 @@ body.pg-loaded > .inner {
   margin-top: 20vh;
   padding: 0 95px;
 
+  @media(max-width:768px) {
+    top: 50%;
+    transform: translate(0,-50%);
+    margin-top: 0;
+  }
   h1 {
     line-height: 75px;
     font-size: 60px;
@@ -154,17 +159,24 @@ body.pg-loaded > .inner {
     color: #646260;
     text-transform: uppercase;
     margin-bottom: 50px;
+
+    @media(max-width: 480px) {
+      line-height: 55px;
+      font-size: 40px;
+    }
   }
 }
 .portfolio-btn {
   display: table;
   margin: 50px auto;
+  text-align: center;
 
   .btn {
     border: none;
     background: none;
     text-transform: uppercase;
     color: #bbbbbb;
+    float: none;
 
     &:focus, &:hover, &:active, &.active {
       outline: none;
@@ -301,5 +313,10 @@ footer {
   }
   @media (max-width: 380px) {
     width: 100%;
+  }
+}
+.hide768 {
+  @media(max-width: 768px) {
+    display: none;
   }
 }
