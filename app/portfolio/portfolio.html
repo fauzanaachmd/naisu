@@ -1,18 +1,18 @@
-<div class="container portfolio-container" ng-controller="PortfolioCtrl">
-    <h3 class="page-title">{{detailData.name}}</h3>
-    <div class="portfolio-detail">
-        <div class="clearfix">
-            <span class="class-name pull-left">
-                <b ng-repeat="class in detailData.class">{{class}} <span>/</span> </b>
-            </span>
-                <span class="class-name pull-right">
-                <b>Year : {{detailData.year}}</b>
-            </span>
+<section class="portfolio-section">
+    <div class="container" isotope-nya>
+        <div class="btn-group portfolio-btn filter-button-group button-group">
+            <button type="button" class="btn button active" data-filter="*">All</button>
+            <button type="button" class="btn button" data-filter=".artwork">Artwork</button>
+            <button type="button" class="btn button" data-filter=".branding">Branding</button>
+            <button type="button" class="btn button" data-filter=".illustration">Illustration</button>
+            <button type="button" class="btn button" data-filter=".typography">Typography</button>
         </div>
-        <div class="portfolio-gallery-container">
-            <img class="portfolio-gallery" ng-repeat="gallery in detailData.gallery" ng-src="{{gallery}}" alt="{{gallery}}">
-        </div>
-        <div class="portfolio-detail-content" ng-bind-html="contentHTML"></div>
-        <hr class="portfolio-hr">
+        <ul class="isotope">
+            <li ng-repeat="x in xList" class="{{x.classname}} col-sm-4 col768-6 grid-item" data-category="{{x.classname}}">
+                <a ng-href="portfolio/{{x.id}}"><img class="portfolio-thum" ng-src="{{x.img}}" width="100%"></a>
+                <a ng-href="portfolio/{{x.id}}"><h3 class="portfolio-name">{{x.name}}</h3></a>
+                <h5 class="portfolio-class">{{x.classname}}</h5>
+            </li>
+        </ul>
     </div>
-</div>
+</section>

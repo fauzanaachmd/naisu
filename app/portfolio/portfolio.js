@@ -3,8 +3,20 @@ angular.module('portfolio', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
 
     }])
+    .controller('PortfolioCtrl', function PortfolioCtrl($scope, $http, $sce) {
+            'use strict';
+            // var portfolioData = null;
 
-    .controller('PortfolioCtrl', function PortfolioCtrl($scope, $routeParams, $http, $sce) {
+            $http.get('portfolio/portfolio.json')
+                .then(function onSuccess(response) {
+                    $scope.xList = response.data;
+                })
+                .catch(function onError(response) {
+                    console.log('error');
+                });
+        }
+    )
+    .controller('PortfolioDetailCtrl', function PortfolioCtrl($scope, $routeParams, $http, $sce) {
         'use strict';
         var portfolioData = null;
 
@@ -24,7 +36,7 @@ angular.module('portfolio', ['ngRoute'])
                 }
             })
             .catch(function onError(response) {
-                console.log(response);
+                console.log('error');
             });
     }
 );

@@ -11,11 +11,11 @@ html {
 }
 
 body > .inner {
-  display: none;
+  visibility: hidden;
 }
 
 body.pg-loaded > .inner {
-  display: block;
+  visibility: visible;
 }
 
 .form-control {
@@ -144,11 +144,14 @@ body.pg-loaded > .inner {
   //top:50%;
   //transform: translate(0,-50%);
   z-index: 1000;
-  margin-top: 20vh;
+  top: 50% !important;
+  transform: translate(0,-50%);
+  margin-top: 0;
   padding: 0 95px;
 
+
   @media(max-width:768px) {
-    top: 50%;
+    top: 50% !important;
     transform: translate(0,-50%);
     margin-top: 0;
   }
@@ -166,6 +169,11 @@ body.pg-loaded > .inner {
     }
   }
 }
+
+#home-portfolio {
+  min-height: 300px;
+}
+
 .portfolio-btn {
   display: table;
   margin: 50px auto;
@@ -254,6 +262,9 @@ footer {
 /* END FOOTER CSS */
 
 /* PORTFOLIO PAGE CSS */
+.portfolio-section {
+  margin-top: 150px;
+}
 .portfolio-container {
   margin-top: 100px;
 }
