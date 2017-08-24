@@ -225,7 +225,7 @@ body.pg-loaded > .inner {
   }
 }
 
-#home-portfolio {
+#home-portfolio, .portfolio-section {
   min-height: 350px;
 }
 

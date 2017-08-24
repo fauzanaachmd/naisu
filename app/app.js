@@ -52,11 +52,10 @@ angular.module('myApp', [
     })
     .directive('isotopeNya', ['$timeout', function ($timeout) {
         return {
+            restrict: 'A',
             link: function ($scope) {
-                restrict: 'A',
                 $scope.$on('$routeChangeSuccess', function() {
                     $timeout(function () {
-                        // console.log('route change');
                         // var iso = new Isotope(document.getElementsByClassName("isotope"), {
                         //     itemSelector: '.grid-item',
                         //     filter: '.print-design'
@@ -68,22 +67,21 @@ angular.module('myApp', [
                                 itemSelector: '.grid-item'
                             });
                         });
-                    });
-
-                    $('.filter-button-group').on( 'click', 'button', function() {
-                        var filterValue = $(this).attr('data-filter');
-                        alert(filterValue);
-                        // $('.isotope').css({'margin-top': '500px'});
-                        $('.isotope').isotope({ filter: filterValue, itemSelector: '.grid-item' });
-                    });
-// change is-checked class on buttons
-                    $('.button-group').each( function( i, buttonGroup ) {
-                        var $buttonGroup = $( buttonGroup );
-                        $buttonGroup.on( 'click', 'button', function() {
-                            $buttonGroup.find('.active').removeClass('active');
-                            $( this ).addClass('active');
+                        $('.filter-button-group').on( 'click', 'button', function() {
+                            var filterValue = $(this).attr('data-filter');
+                            // $('.isotope').css({'margin-top': '500px'});
+                            $('.isotope').isotope({ filter: filterValue, itemSelector: '.grid-item' }).css({'margin-top': '50px'});
                         });
-                    });
+// change is-checked class on buttons
+                        $('.button-group').each( function( i, buttonGroup ) {
+                            var $buttonGroup = $( buttonGroup );
+                            $buttonGroup.on( 'click', 'button', function() {
+                                $buttonGroup.find('.active').removeClass('active');
+                                $( this ).addClass('active');
+                            });
+                        });
+                        // alert('route change');
+                    }, 2000);
                 });
             }
         };
