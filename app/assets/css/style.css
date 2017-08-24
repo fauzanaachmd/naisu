@@ -161,11 +161,9 @@ body.pg-loaded > .inner {
   }
 }
 .home-hero-parallax #parallax-container {
-  position: absolute;
-  width: 100%;
+  position: relative;
   height: 100%;
   z-index: 100;
-  overflow: hidden;
 }
 .home-hero-parallax #parallax-container #layer1 {
   position: absolute;
@@ -204,7 +202,6 @@ body.pg-loaded > .inner {
   top: 50% !important;
   transform: translate(0, -50%);
   margin-top: 0;
-  padding: 0 95px;
 }
 @media (max-width: 768px) {
   .welcome-text {
@@ -229,7 +226,7 @@ body.pg-loaded > .inner {
 }
 
 #home-portfolio {
-  min-height: 300px;
+  min-height: 350px;
 }
 
 .portfolio-btn {
@@ -355,6 +352,16 @@ footer .footer-address-table tr td:first-child {
   margin-top: 100px;
 }
 
+@media (max-width: 768px) {
+  .service {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .service img {
+    margin-left: 35px;
+  }
+}
+
 /* END OF ABOUT PAGE CSS */
 /* CONTACT PAGE CSS */
 .btn-contact {
@@ -381,6 +388,20 @@ footer .footer-address-table tr td:first-child {
 @media (max-width: 768px) {
   .hide768 {
     display: none;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 400px) {
+  .col-768-6 {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .clearfix-768 {
+    display: table;
+    content: '';
+    clear: both;
   }
 }
 

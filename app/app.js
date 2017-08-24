@@ -53,10 +53,10 @@ angular.module('myApp', [
     .directive('isotopeNya', ['$timeout', function ($timeout) {
         return {
             link: function ($scope) {
-                restrict: 'E',
+                restrict: 'A',
                 $scope.$on('$routeChangeSuccess', function() {
                     $timeout(function () {
-                        // alert('route change');
+                        console.log('route change');
                         // var iso = new Isotope(document.getElementsByClassName("isotope"), {
                         //     itemSelector: '.grid-item',
                         //     filter: '.print-design'

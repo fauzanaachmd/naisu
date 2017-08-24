@@ -100,11 +100,11 @@ body.pg-loaded > .inner {
   }
 
   #parallax-container {
-    position: absolute;
-    width: 100%;
+    position: relative;
+    //width: 100%;
     height: 100%;
     z-index: 100;
-    overflow: hidden;
+    //overflow: hidden;
 
     #layer1 {
       position: absolute;
@@ -147,13 +147,14 @@ body.pg-loaded > .inner {
   top: 50% !important;
   transform: translate(0,-50%);
   margin-top: 0;
-  padding: 0 95px;
+  //padding: 0 95px;
 
 
   @media(max-width:768px) {
     top: 50% !important;
     transform: translate(0,-50%);
     margin-top: 0;
+    //padding: 0 30px;
   }
   h1 {
     line-height: 75px;
@@ -171,7 +172,7 @@ body.pg-loaded > .inner {
 }
 
 #home-portfolio {
-  min-height: 300px;
+  min-height: 350px;
 }
 
 .portfolio-btn {
@@ -305,6 +306,16 @@ footer {
 .about-container {
   margin-top: 100px;
 }
+.service {
+  @media(max-width: 768px) {
+    text-align: center;
+    margin: 0 auto;
+
+    img {
+      margin-left: 35px;
+    }
+  }
+}
 /* END OF ABOUT PAGE CSS */
 
 /* CONTACT PAGE CSS */
@@ -329,5 +340,19 @@ footer {
 .hide768 {
   @media(max-width: 768px) {
     display: none;
+  }
+}
+
+.col-768-6 {
+  @media(max-width: 768px) and (min-width: 400px) {
+    width: 50% !important;
+  }
+}
+
+.clearfix-768 {
+  @media(max-width: 768px) {
+    display: table;
+    content: '';
+    clear: both;
   }
 }
