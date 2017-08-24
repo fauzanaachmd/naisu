@@ -1,10 +1,5 @@
 
 angular.module('home', ['ngRoute'])
-
-.config(['$routeProvider', function($routeProvider) {
-
-}])
-
 .controller('HomeCtrl', function HomeCtrl($scope, $route) {
     $scope.$on('$routeChangeSuccess', function () {
         $scope.xList = [

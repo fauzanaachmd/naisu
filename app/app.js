@@ -56,7 +56,7 @@ angular.module('myApp', [
                 restrict: 'A',
                 $scope.$on('$routeChangeSuccess', function() {
                     $timeout(function () {
-                        console.log('route change');
+                        // console.log('route change');
                         // var iso = new Isotope(document.getElementsByClassName("isotope"), {
                         //     itemSelector: '.grid-item',
                         //     filter: '.print-design'
@@ -72,6 +72,7 @@ angular.module('myApp', [
 
                     $('.filter-button-group').on( 'click', 'button', function() {
                         var filterValue = $(this).attr('data-filter');
+                        alert(filterValue);
                         // $('.isotope').css({'margin-top': '500px'});
                         $('.isotope').isotope({ filter: filterValue, itemSelector: '.grid-item' });
                     });
