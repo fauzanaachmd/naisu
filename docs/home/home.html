@@ -1,0 +1,32 @@
+<div class="home-hero-parallax" parallax-nya>
+    <div id="parallax-container" class="container">
+        <div id="layer1" class="hide768"><img ng-src="assets/img/layer1.png"></div>
+        <div id="layer2" class="hide768"><img ng-src="assets/img/layer2.png"></div>
+        <div id="layer3" class="hide768"><img ng-src="assets/img/layer3.png"></div>
+        <div id="layer4" class="hide768"><img ng-src="assets/img/layer4.png"></div>
+        <div id="layer5" class="hide768"><img ng-src="assets/img/layer5.png"></div>
+        <div id="layer6" class="hide768"><img ng-src="assets/img/layer6.png"></div>
+        <div id="layer7" class="welcome-text">
+            <h1>It's<br>Naisu<br>To Meet You</h1>
+            <a class="btn btn-o" href="#">Tell Me More</a>
+        </div>
+    </div>
+</div>
+<section id="home-portfolio">
+    <div class="container" isotope-nya>
+        <div class="btn-group portfolio-btn filter-button-group button-group">
+            <button type="button" class="btn button active" data-filter="*">All</button>
+            <button type="button" class="btn button" data-filter=".artwork">Artwork</button>
+            <button type="button" class="btn button" data-filter=".branding">Branding</button>
+            <button type="button" class="btn button" data-filter=".illustration">Illustration</button>
+            <button type="button" class="btn button" data-filter=".typography">Typography</button>
+        </div>
+        <ul class="isotope">
+            <li ng-repeat="x in xList" class="{{x.class}} col-sm-4 col768-6 grid-item" data-category="{{x.class}}">
+                <a ng-href="portfolio/{{x.id}}"><img class="portfolio-thum" ng-src="{{x.img}}" width="100%"></a>
+                <a ng-href="portfolio/{{x.id}}"><h3 class="portfolio-name">{{x.name}}</h3></a>
+                <h5 class="portfolio-class">{{x.classname}}</h5>
+            </li>
+        </ul>
+    </div>
+</section>
